@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 app = FastAPI()
 
 # MongoDB setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("<uri>")
 db = client.finance_tracker
 users_collection = db.users
 transactions_collection = db.transactions
